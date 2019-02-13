@@ -7,7 +7,7 @@ module "nginx-east" {
     vpc-id          = "${var.us-east-vpc}"
     server_hostname = "${var.server_hostname}"
     public-subnet   = "${var.us-east-subnet}"
-    key-pair        = "${var.us-east-keypair}"
+    us-east-keypair = "${var.us-east-keypair}"
 }
 
 module "nginx-west" {
@@ -19,7 +19,7 @@ module "nginx-west" {
     vpc-id          = "${var.us-west-vpc}"
     server_hostname = "${var.server_hostname}"
     public-subnet   = "${var.us-west-subnet}"
-    key-pair        = "${var.us-west-keypair}"
+    us-west-keypair = "${var.us-west-keypair}"
 }
 
 module "nginx-euwest" {
@@ -31,6 +31,6 @@ module "nginx-euwest" {
     vpc-id          = "${var.eu-west-vpc}"
     server_hostname = "${var.server_hostname}"
     public-subnet   = "${var.eu-west-subnet}"
-    key-pair        = "${var.eu-west-keypair}"
+    eu-west-keypair = "${var.eu-west-keypair}"
 }
 
