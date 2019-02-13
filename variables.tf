@@ -55,3 +55,17 @@ variable "eu-west-subnet" {
     default = ""
 }
 
+variable "us-east-keypair" {
+    description = "Key pair name to gain access to the instance"
+    default = ""
+}
+
+variable "us-west-keypair" {
+    description = "Key pair name to gain access to the instance"
+    default = ""
+}
+
+variable "eu-west-keypair" {
+    description = "Key pair name to gain access to the instance"
+    default = ""
+}

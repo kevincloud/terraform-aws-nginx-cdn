@@ -37,3 +37,8 @@ variable "public-dns" {
     description = "Instance public DNS"
     default = ""
 }
+
+variable "us-east-keypair" {
+    description = "Key pair name to gain access to the instance"
+    default = ""
+}

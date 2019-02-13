@@ -17,6 +17,7 @@ resource "aws_instance" "nginx_instance" {
     vpc_security_group_ids = ["${aws_security_group.nginx-sg.id}"]
     user_data = "${data.template_file.user_data.rendered}"
     subnet_id = "${var.public-subnet}"
+    key_name = "${var.us-west-keypair}"
 
     tags = {
         Name = "kevin-temp-cc"
