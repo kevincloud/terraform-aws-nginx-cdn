@@ -12,17 +12,17 @@ variable "server_hostname" {
 
 variable "us-east" {
     description = "Deploy to N. Virginia region (us-east-1)"
-    value = false
+    default = false
 }
 
 variable "us-west" {
     description = "Deploy to Oregon region (us-west-2)"
-    value = false
+    default = false
 }
 
 variable "eu-west" {
     description = "Deploy to Ireland region (eu-west-1)"
-    value = false
+    default = false
 }
 
 variable "us-east-vpc" {

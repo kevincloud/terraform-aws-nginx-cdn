@@ -12,12 +12,12 @@ variable "aws_secret_key" {
 }
 
 variable "server_name" {
-  description = "Name of the server"
-  default = "nginx-cc"
+    description = "Name of the server"
+    default = "nginx-cc"
 }
 
 variable "server_hostname" {
-  description = "The FQDN or IP address of the web server to cache content for"
+    description = "The FQDN or IP address of the web server to cache content for"
 }
 
 variable "vpc-id" {
