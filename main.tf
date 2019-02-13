@@ -6,7 +6,7 @@ module "nginx-east" {
     aws_secret_key  = "${var.aws_secret_key}"
     vpc-id          = "${var.us-east-vpc}"
     server_hostname = "${var.server_hostname}"
-    subnet-id       = "${var.us-east-subnet}"   
+    public-subnet   = "${var.us-east-subnet}"   
 }
 
 module "nginx-west" {
@@ -17,7 +17,7 @@ module "nginx-west" {
     aws_secret_key  = "${var.aws_secret_key}"
     vpc-id          = "${var.us-west-vpc}"
     server_hostname = "${var.server_hostname}"
-    subnet-id       = "${var.us-west-subnet}"   
+    public-subnet   = "${var.us-west-subnet}"   
 }
 
 module "nginx-euwest" {
@@ -28,6 +28,6 @@ module "nginx-euwest" {
     aws_secret_key  = "${var.aws_secret_key}"
     vpc-id          = "${var.eu-west-vpc}"
     server_hostname = "${var.server_hostname}"
-    subnet-id       = "${var.eu-west-subnet}"   
+    public-subnet   = "${var.eu-west-subnet}"   
 }
 
