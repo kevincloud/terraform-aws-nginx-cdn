@@ -5,3 +5,7 @@ output "ip_address" {
 output "host_name" {
     value = "${element(compact(concat(list(var.public-dns), aws_instance.nginx_instance.*.public_dns)), 0)}"
 }
+
+output "private_ip" {
+    value = "${aws_instance.nginx_instance.private_ip}"
+}
