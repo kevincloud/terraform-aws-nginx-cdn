@@ -33,6 +33,11 @@ variable "public-ip" {
     default = ""
 }
 
+variable "private-ip" {
+    description = "Instance private IP"
+    default = ""
+}
+
 variable "public-dns" {
     description = "Instance public DNS"
     default = ""

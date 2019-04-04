@@ -7,5 +7,5 @@ output "host_name" {
 }
 
 output "private_ip" {
-    value = "${aws_instance.nginx_instance.private_ip}"
+    value = "${element(compact(concat(list(var.private-ip), aws_instance.nginx_instance.*.private_ip)), 0)}"
 }
